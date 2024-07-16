@@ -65,33 +65,6 @@
     border: 1px;
 }
 
-.contenido ul {
-    border-left: 1px;
-}
-
-.contenido li {
-    text-align: left;
-    margin: 5%;
-    font-size: 20pt;
-    font-family: 'Klee One';
-    list-style-type: none;
-}
-
-.contenido a {
-    text-decoration: none;
-    color: black;
-    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
-}
-
-.contenido a:hover {
-    font-size: 30pt;
-}
-
-.borde-vertical {
-    width: 1px;
-    height: auto;
-    background-color: black;
-}
 
 .cuerpo-cat hr {
     border: none;

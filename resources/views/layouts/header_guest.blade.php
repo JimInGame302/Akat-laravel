@@ -37,7 +37,7 @@
     </div>
     <div class="pagina">
         <div class="encabezado">
-            <a class="icono" href="/">
+            <a class="icono" href="/home">
                 <img src="images/icono_akat.jpg" alt="Icono akat">
                 <span class="titulo">AKAT</span>
             </a>

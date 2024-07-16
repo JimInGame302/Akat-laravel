@@ -39,11 +39,11 @@
 <div class="menu">
     <h2>Categorías</h2>
     <ul>
-        <li><a href="{{ url('/html/categorias/accesorio.html') }}">Accesorios</a></li>
-        <li><a href="{{ url('/html/categorias/buzo.html') }}">Buzos</a></li>
-        <li><a href="{{ url('/html/categorias/camisa.html') }}">Camisas</a></li>
-        <li><a href="{{ url('/html/categorias/camiseta.html') }}">Camisetas</a></li>
-        <li><a href="{{ url('/html/categorias/pantalon.html') }}">Pantalones</a></li>
+        <li><a href="/accesorios">Accesorios</a></li>
+        <li><a href="/buzos">Buzos</a></li>
+        <li><a href="/camisas">Camisas</a></li>
+        <li><a href="/camisetas">Camisetas</a></li>
+        <li><a href="/pantalones">Pantalones</a></li>
     </ul>
 </div>
 
