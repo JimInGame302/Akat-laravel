@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FBFFDF;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.petalos {
+    position: absolute;
+    display: flex;
+}
+
+.petalos img {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    margin: 0 20px;
+    animation: animate linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0, 0vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    5% {
+        transform: translate(5vw, 5vh) rotate(10deg);
+    }
+
+    10% {
+        transform: translate(10vw, 10vh) rotate(-10deg);
+    }
+
+    15% {
+        transform: translate(15vw, 15vh) rotate(10deg);
+    }
+
+    16% {
+        transform: translate(14.8vw, 16vh);
+    }
+
+    20% {
+        transform: translate(10vw, 20vh) rotate(-10deg);
+    }
+
+    21% {
+        transform: translate(10.2vw, 21vh);
+    }
+
+    25% {
+        transform: translate(15vw, 25vh) rotate(10deg);
+    }
+
+    30% {
+        transform: translate(20vw, 30vh) rotate(-10deg);
+    }
+
+    35% {
+        transform: translate(25vw, 35vh) rotate(10deg);
+    }
+
+    36% {
+        transform: translate(24.8vw, 36vh);
+    }
+
+    40% {
+        transform: translate(20vw, 40vh) rotate(-10deg);
+    }
+
+    41% {
+        transform: translate(20.2vw, 41vh);
+    }
+
+    45% {
+        transform: translate(25vw, 45vh) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(30vw, 50vh) rotate(-10deg);
+        opacity: 1;
+    }
+
+    55% {
+        transform: translate(35vw, 55vh) rotate(10deg);
+    }
+
+    56% {
+        transform: translate(34.8vw, 56vh);
+    }
+
+    60% {
+        transform: translate(30vw, 60vh) rotate(-10deg);
+    }
+
+    61% {
+        transform: translate(30.2vw, 61vh);
+    }
+
+    65% {
+        transform: translate(35vw, 65vh) rotate(10deg);
+    }
+
+    70% {
+        transform: translate(40vw, 70vh) rotate(-10deg);
+    }
+
+    75% {
+        transform: translate(45vw, 75vh) rotate(10deg);
+    }
+
+    76% {
+        transform: translate(44.8vw, 76vh);
+    }
+
+    80% {
+        transform: translate(40vw, 80vh) rotate(-10deg);
+    }
+
+    81% {
+        transform: translate(40.2vw, 81vh);
+    }
+
+    85% {
+        transform: translate(45vw, 85vh) rotate(10deg);
+    }
+
+    90% {
+        transform: translate(50vw, 90vh) rotate(-10deg);
+    }
+
+    95% {
+        transform: translate(55vw, 95vh) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(60vw, 100vh) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.pagina {
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background: #F8FFCA;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.75rem;
+    justify-content: space-between;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.icono img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Klee One';
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.botones img{
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.cuerpo h2 {
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Klee One';
+    margin-bottom: 50px;
+}
+
+.categorias {
+    display: flex;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    display: 20rem;
+    gap: 1rem;
+}
+
+.categorias a {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    text-decoration: none;
+}
+
+.categorias>a:hover {
+    flex: 3;
+    background-size: auto 80%;
+    border: 5px;
+    border-color: black;
+}
+
+.categorias h3 {
+    text-align: center;
+    font-size: 16pt;
+    font-family: 'Klee One';
+    margin: auto;
+    color: black;
+}
+
+.cuerpo {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cuerpo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/olas.jpg') center no-repeat;
+    background-size: auto 200%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+}
+
+.info {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.informacion{
+    width: 30%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    color: white;
+}
+
+.informacion p{
+    margin: 1%;
+}
+
+.contacto{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    color: white;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.contacto p{
+    margin: 1%;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+}
